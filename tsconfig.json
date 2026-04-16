@@ -3,7 +3,9 @@
     "outDir": "./.modelence/",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": [
+        "./src/*"
+      ]
     },
     "sourceMap": true,
     "noImplicitAny": true,
@@ -36,6 +38,7 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": [
+    "**/*.js",
     "**/*.ts",
     "**/*.d.ts",
     "**/*.tsx"
