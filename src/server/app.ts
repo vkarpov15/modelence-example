@@ -1,9 +1,10 @@
 import { startApp } from 'modelence/server';
-import todoModule from '@/server/todo';
+import { appModules } from '@/server/modules';
+import studioModule from '@/server/studio';
 import { createDemoUser } from '@/server/migrations/createDemoUser';
 
 startApp({
-  modules: [todoModule],
+  modules: [...appModules, studioModule],
 
   security: {
     frameAncestors: ['https://modelence.com', 'https://*.modelence.com', 'http://localhost:*'],
